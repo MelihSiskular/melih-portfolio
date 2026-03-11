@@ -1,16 +1,16 @@
+"use client";
+
 import "./globals.css";
 import Link from "next/link";
-
-export const metadata = {
-  title: "Melih Siskular",
-  description: "Personal portfolio website",
-};
+import { useState } from "react";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -32,7 +32,8 @@ export default function RootLayout({
               Melih Siskular
             </Link>
 
-            <nav className="items-center gap-6 text-sm md:flex">
+            {/* Desktop nav */}
+            <nav className="hidden items-center gap-6 text-sm md:flex">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -43,7 +44,33 @@ export default function RootLayout({
                 </Link>
               ))}
             </nav>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="rounded-xl border border-white/10 px-3 py-2 text-sm text-slate-300 md:hidden"
+            >
+              Menu
+            </button>
           </div>
+
+          {/* Mobile dropdown */}
+          {menuOpen && (
+            <div className="border-t border-white/10 px-6 py-4 md:hidden">
+              <div className="flex flex-col gap-4">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-slate-300 transition hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </header>
 
         {children}
