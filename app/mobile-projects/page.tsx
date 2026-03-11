@@ -1,0 +1,68 @@
+export default function MobileProjectsPage() {
+  const projects = [
+    {
+      title: "Fantasy Football Draft",
+      description:
+        "A football management and draft simulation game developed with SwiftUI. The app allows users to build squads, create tactical lineups and simulate matches through a strategy-based football experience.",
+      tags: ["SwiftUI", "iOS", "Game Logic", "App Store"],
+    },
+    {
+      title: "Language Learning App",
+      description:
+        "A mobile language learning application focused on vocabulary training and quiz-based learning. The app is designed with a clean interface and aims to make language practice simple and interactive.",
+      tags: ["SwiftUI", "Education", "Mobile App"],
+    },
+  ];
+
+  return (
+    <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div className="mb-10 max-w-3xl">
+        <p className="text-sm uppercase tracking-[0.25em] text-blue-300">
+          Mobile Projects
+        </p>
+
+        <h1 className="mt-2 text-3xl font-semibold md:text-4xl">
+          iOS applications and product-focused development
+        </h1>
+
+        <p className="mt-4 text-base leading-8 text-slate-300">
+          This section showcases my mobile development projects built mainly
+          with SwiftUI. My focus is on creating clean interfaces, practical
+          features and product-oriented applications that solve real problems.
+        </p>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {projects.map((project) => (
+          <div
+            key={project.title}
+            className="rounded-[28px] border border-white/10 bg-[#0b141d] p-6"
+          >
+            <div className="mb-5 rounded-[20px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.14),transparent_35%),linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] p-4">
+              <div className="flex h-36 items-center justify-center rounded-[16px] border border-dashed border-white/10 text-sm text-slate-400">
+                Mobile project preview
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold">{project.title}</h3>
+
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              {project.description}
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
