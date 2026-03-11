@@ -6,6 +6,7 @@ export default function ComputerVisionPage() {
       description:
         "A computer vision system designed to detect available parking spaces using camera footage. The project uses image processing techniques and detection logic to determine whether a parking spot is occupied or empty.",
       tags: ["Python", "OpenCV", "Computer Vision"],
+      image:"/previews/park_yeri.png"
     },
   ];
 
@@ -13,7 +14,7 @@ export default function ComputerVisionPage() {
     <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
 
       <div className="mb-10 max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.25em] text-emerald-300">
+        <p className="text-sm uppercase tracking-[0.25em] text-purple-300">
           Computer Vision
         </p>
 
@@ -39,9 +40,11 @@ export default function ComputerVisionPage() {
           >
 
             <div className="mb-5 rounded-[20px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.14),transparent_35%),linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] p-4">
-              <div className="flex h-40 items-center justify-center rounded-[16px] border border-dashed border-white/10 text-sm text-slate-400">
-                Computer vision project preview
-              </div>
+                      <img
+  src={project.image}
+  alt={project.title}
+  className="h-36 w-full rounded-[16px] object-cover transition duration-300 hover:scale-105"
+/>
             </div>
 
             <h3 className="text-xl font-semibold">

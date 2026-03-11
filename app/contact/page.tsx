@@ -25,7 +25,7 @@ export default function ContactPage() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
       <div className="mb-10 max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.25em] text-emerald-300">
+        <p className="text-sm uppercase tracking-[0.25em] text-red-300">
           Contact
         </p>
 
@@ -34,8 +34,7 @@ export default function ContactPage() {
         </h1>
 
         <p className="mt-4 text-base leading-8 text-slate-300">
-          If you are interested in my projects, collaborations or opportunities
-          related to software development, sports analytics or data science,
+          If you are interested in my projects, collaborations or opportunities        
           feel free to reach out through the platforms below.
         </p>
       </div>

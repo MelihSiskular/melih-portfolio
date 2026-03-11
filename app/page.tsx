@@ -5,12 +5,15 @@ export default function HomePage() {
     "Pandas",
     "NumPy",
     "Matplotlib",
+    "Seaborn",
     "mplsoccer",
+    "SQL",
     "Data Analytics",
     "SwiftUI",
     "UIKit",
     "OpenCV",
-    "YOLO"
+    "YOLO",
+    "Machine Learning"
   ];
 
   const featuredProjects = [
@@ -20,7 +23,7 @@ export default function HomePage() {
       year: "App Store",
       description:
         "A football management and draft simulation game built with SwiftUI where users build squads, set tactics and simulate matches.",
-      tags: ["SwiftUI", "iOS", "Game Logic"],
+      tags: [],
     },
     {
       title: "xT & Progressive Actions Analysis",
@@ -28,7 +31,7 @@ export default function HomePage() {
       year: "Report",
       description:
         "A football analytics project analyzing how teams create danger through progressive passes and carries using Python.",
-      tags: ["Python", "Pandas", "xT"],
+      tags: [],
     },
     {
       title: "Parking Space Detection System",
@@ -36,7 +39,7 @@ export default function HomePage() {
       year: "CV Project",
       description:
         "A computer vision system that detects available parking spaces from camera footage using OpenCV-based image processing.",
-      tags: ["Python", "OpenCV", "Computer Vision"],
+      tags: [],
     },
   ];
 
@@ -61,12 +64,12 @@ export default function HomePage() {
             </div>
 
             <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.05]">
-              Building digital products and turning football data into visual insights.
+              Building digital products and turning data into visual insights.
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
               I am Melih Siskular, a Computer Engineering student passionate
-              about software development, sports analytics, data science and
+              about software development, sports analytics, data science, ML and
               computer vision. This website showcases my apps, reports and
               technical projects.
             </p>
@@ -158,7 +161,7 @@ export default function HomePage() {
 
         <div className="mb-10">
           <p className="text-sm uppercase tracking-[0.25em] text-emerald-300">
-            Selected Projects
+            Pinned Projects
           </p>
 
           <h2 className="mt-2 text-3xl font-semibold md:text-4xl">

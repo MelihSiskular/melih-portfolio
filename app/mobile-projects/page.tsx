@@ -5,12 +5,14 @@ export default function MobileProjectsPage() {
       description:
         "A football management and draft simulation game developed with SwiftUI. The app allows users to build squads, create tactical lineups and simulate matches through a strategy-based football experience.",
       tags: ["SwiftUI", "iOS", "Game Logic", "App Store"],
+      image: "/previews/ffd.png"
     },
     {
       title: "Language Learning App",
       description:
         "A mobile language learning application focused on vocabulary training and quiz-based learning. The app is designed with a clean interface and aims to make language practice simple and interactive.",
       tags: ["SwiftUI", "Education", "Mobile App"],
+      image: "/previews/oxford3000.png"
     },
   ];
 
@@ -39,9 +41,11 @@ export default function MobileProjectsPage() {
             className="rounded-[28px] border border-white/10 bg-[#0b141d] p-6"
           >
             <div className="mb-5 rounded-[20px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.14),transparent_35%),linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] p-4">
-              <div className="flex h-36 items-center justify-center rounded-[16px] border border-dashed border-white/10 text-sm text-slate-400">
-                Mobile project preview
-              </div>
+                  <img
+  src={project.image}
+  alt={project.title}
+  className="h-36 w-full rounded-[16px] object-cover transition duration-300 hover:scale-105"
+/>
             </div>
 
             <h3 className="text-xl font-semibold">{project.title}</h3>

@@ -5,18 +5,21 @@ export default function SportsAnalyticsPage() {
       description:
         "A football analytics project focused on how teams create danger through passes and carries. The analysis highlights expected threat and progressive actions using Python-based data workflows and clear visual storytelling.",
       tags: ["Python", "Pandas", "xT", "Data Visualization"],
+      image: "/previews/progressive passes.png"
     },
     {
       title: "Süper Lig Penalty Analysis",
       description:
         "A comparative analysis of penalty takers using penalty data, player tendencies and visual summaries. The project is designed to present player-level insights in a clean and readable analytical format.",
       tags: ["Football Data", "Analytics", "Visualization"],
+      image: "/previews/Football analytics project preview.png"
     },
     {
       title: "Player Shot Map Analysis",
       description:
         "A shot map project that analyzes player shooting locations, goal patterns and attacking output. Built with Python, Matplotlib and mplsoccer to transform raw event data into meaningful visuals.",
       tags: ["Python", "Matplotlib", "mplsoccer", "Shot Maps"],
+      image: "/previews/Group 5-4.png"
     },
   ];
 
@@ -46,9 +49,11 @@ export default function SportsAnalyticsPage() {
             className="rounded-[28px] border border-white/10 bg-[#0b141d] p-6"
           >
             <div className="mb-5 rounded-[20px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.14),transparent_35%),linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] p-4">
-              <div className="flex h-36 items-center justify-center rounded-[16px] border border-dashed border-white/10 text-sm text-slate-400">
-                Football analytics project preview
-              </div>
+         <img
+  src={project.image}
+  alt={project.title}
+  className="h-36 w-full rounded-[16px] object-cover transition duration-300 hover:scale-105"
+/>
             </div>
 
             <h3 className="text-xl font-semibold">{project.title}</h3>
