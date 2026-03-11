@@ -32,7 +32,7 @@ export default function RootLayout({
               Melih Siskular
             </Link>
 
-            <nav className="hidden items-center gap-6 text-sm md:flex">
+            <nav className="items-center gap-6 text-sm md:flex">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
