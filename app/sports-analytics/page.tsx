@@ -4,21 +4,24 @@ export default function SportsAnalyticsPage() {
       title: "xT (Expected Threat) & Progressive Values",
       description:
         "A football analytics project focused on how teams create danger through passes and carries. The analysis highlights expected threat and progressive actions using Python-based data workflows and clear visual storytelling.",
-      tags: ["Python", "Pandas", "xT", "Data Visualization"],
-      image: "/previews/progressive passes.png"
+      tags: [],
+      image: "/previews/progressive passes.png",
+      pdf: "/pdfs/xT_Progressive_analyse.pdf"
+
     },
     {
       title: "Süper Lig Penalty Analysis",
       description:
         "A comparative analysis of penalty takers using penalty data, player tendencies and visual summaries. The project is designed to present player-level insights in a clean and readable analytical format.",
-      tags: ["Football Data", "Analytics", "Visualization"],
-      image: "/previews/Football analytics project preview.png"
+      tags: [],
+      image: "/previews/Football analytics project preview.png",
+      pdf: "/pdfs/Penalty_analyse.pdf"
     },
     {
       title: "Player Shot Map Analysis",
       description:
         "A shot map project that analyzes player shooting locations, goal patterns and attacking output. Built with Python, Matplotlib and mplsoccer to transform raw event data into meaningful visuals.",
-      tags: ["Python", "Matplotlib", "mplsoccer", "Shot Maps"],
+      tags: [],
       image: "/previews/Group 5-4.png"
     },
   ];
@@ -72,6 +75,27 @@ export default function SportsAnalyticsPage() {
                 </span>
               ))}
             </div>
+            {project.pdf && (
+  <div className="mt-6 flex gap-3">
+    <a
+      href={project.pdf}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-300 transition hover:bg-emerald-400/20"
+    >
+      View PDF
+    </a>
+
+    <a
+      href={project.pdf}
+      download
+      className="rounded-xl border border-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+    >
+      Download
+    </a>
+  </div>
+)}
+
           </div>
         ))}
       </div>

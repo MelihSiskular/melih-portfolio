@@ -94,7 +94,7 @@ export default function HomePage() {
   <div className="rounded-[32px] border border-white/10 bg-white/[0.04] p-5 shadow-2xl shadow-black/30 backdrop-blur">
     <div className="rounded-[28px] border border-emerald-400/20 bg-[linear-gradient(180deg,#0c1823_0%,#0a141e_100%)] p-6">
       <p className="text-xs uppercase tracking-[0.25em] text-emerald-300">
-        Featured Mobile Project
+        My First Mobile App 
       </p>
 
       <h3 className="mt-2 text-2xl font-semibold">

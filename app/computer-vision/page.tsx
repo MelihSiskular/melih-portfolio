@@ -5,7 +5,7 @@ export default function ComputerVisionPage() {
       title: "Parking Space Detection System",
       description:
         "A computer vision system designed to detect available parking spaces using camera footage. The project uses image processing techniques and detection logic to determine whether a parking spot is occupied or empty.",
-      tags: ["Python", "OpenCV", "Computer Vision"],
+      tags: ["Python", "OpenCV","Yolo","Numpy", "Computer Vision"],
       image:"/previews/park_yeri.png"
     },
   ];
@@ -25,7 +25,7 @@ export default function ComputerVisionPage() {
         <p className="mt-4 text-base leading-8 text-slate-300">
           This section includes my computer vision projects focused on solving
           real-world problems using image processing and machine learning
-          techniques. I mainly work with Python and OpenCV to analyze camera
+          techniques. I mainly work with Python, Yolo and OpenCV to analyze camera
           input and build practical detection systems.
         </p>
       </div>

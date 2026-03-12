@@ -4,16 +4,24 @@ export default function MobileProjectsPage() {
       title: "Fantasy Football Draft",
       description:
         "A football management and draft simulation game developed with SwiftUI. The app allows users to build squads, create tactical lineups and simulate matches through a strategy-based football experience.",
-      tags: ["SwiftUI", "iOS", "Game Logic", "App Store"],
+      tags: ["SwiftUI", "iOS", "Mobile Game", "App Store"],
       image: "/previews/ffd.png"
     },
     {
-      title: "Language Learning App",
+      title: "The Oxford 3000",
       description:
         "A mobile language learning application focused on vocabulary training and quiz-based learning. The app is designed with a clean interface and aims to make language practice simple and interactive.",
       tags: ["SwiftUI", "Education", "Mobile App"],
       image: "/previews/oxford3000.png"
     },
+    {
+      title: "Road Assistance Project",
+      description : "A SwiftUI application developed for an Object-Oriented Programming course. Integrated with Firebase, the app allows users to request roadside assistance while service providers can view and accept incoming requests with basic interface.",
+      tags: ["SwiftUI","Firebase"],
+      image: "/previews/yol_yardim.png"
+
+    }
+
   ];
 
   return (
@@ -28,9 +36,9 @@ export default function MobileProjectsPage() {
         </h1>
 
         <p className="mt-4 text-base leading-8 text-slate-300">
-          This section showcases my mobile development projects built mainly
+          This section showcases my latest mobile development projects built mainly
           with SwiftUI. My focus is on creating clean interfaces, practical
-          features and product-oriented applications that solve real problems.
+          features and product oriented applications that solve real problems.
         </p>
       </div>
 

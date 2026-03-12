@@ -1,24 +1,14 @@
 export default function ContactPage() {
   const contacts = [
     {
-      title: "GitHub",
-      value: "github.com/MelihSiskular",
-      link: "https://github.com/MelihSiskular",
-    },
-    {
       title: "LinkedIn",
       value: "linkedin.com/in/melih-siskular",
       link: "https://www.linkedin.com/in/melih-şişkular-109582245",
     },
     {
       title: "Email",
-      value: "feis_melih@hotmail.com",
-      link: "mailto:feis_melih@hotmail.com",
-    },
-    {
-      title: "Resume / CV",
-      value: "Download CV",
-      link: "/Melih_Siskular_cv_En.pdf",
+      value: "melihsiskular@gmail.com",
+      link: "mailto:melihsiskular@gmail.com",
     },
   ];
 
