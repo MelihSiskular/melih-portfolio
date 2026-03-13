@@ -5,7 +5,8 @@ export default function MobileProjectsPage() {
       description:
         "A football management and draft simulation game developed with SwiftUI. The app allows users to build squads, create tactical lineups and simulate matches through a strategy-based football experience.",
       tags: ["SwiftUI", "iOS", "Mobile Game", "App Store"],
-      image: "/previews/ffd.png"
+      image: "/previews/ffd.png",
+      link: "https://apps.apple.com/tr/app/fantasy-football-draft/id6754261289?l=tr"
     },
     {
       title: "The Oxford 3000",
@@ -72,6 +73,19 @@ export default function MobileProjectsPage() {
                 </span>
               ))}
             </div>
+
+            {project.link && (
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-6 inline-block rounded-xl bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-400"
+  >
+     App Store
+  </a>
+)}
+
+
           </div>
         ))}
       </div>
