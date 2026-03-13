@@ -1,3 +1,30 @@
+export const metadata = {
+  title: "Melih Siskular | Software Developer & Sports Analytics",
+  description:
+    "Portfolio of Melih Siskular, a Computer Engineering student building iOS apps, sports analytics projects, data science and computer vision solutions.",
+  keywords: [
+    "Melih Siskular",
+    "iOS Developer",
+    "SwiftUI",
+    "Sports Analytics",
+    "Football Data Analysis",
+    "Computer Vision",
+    "Python Data Science",
+  ],
+  authors: [{ name: "Melih Siskular" }],
+  creator: "Melih Siskular",
+  metadataBase: new URL("https://melihsiskular.com"),
+  openGraph: {
+    title: "Melih Siskular Portfolio",
+    description:
+      "Projects in iOS development, sports analytics, data science and computer vision.",
+    url: "https://melihsiskular.com",
+    siteName: "Melih Siskular Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+};
+
 "use client";
 
 import "./globals.css";

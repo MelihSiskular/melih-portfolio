@@ -10,6 +10,11 @@ export default function ContactPage() {
       value: "melihsiskular@gmail.com",
       link: "mailto:melihsiskular@gmail.com",
     },
+    {
+      title: "Fantasy Football Draft App"
+      value: "https://www.instagram.com/fantasyfootballdraftapp/"
+      link: "https://www.instagram.com/fantasyfootballdraftapp/"
+    }
   ];
 
   return (
