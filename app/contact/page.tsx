@@ -11,8 +11,8 @@ export default function ContactPage() {
       link: "mailto:melihsiskular@gmail.com",
     },
     {
-      title: "Fantasy Football Draft App"
-      value: "https://www.instagram.com/fantasyfootballdraftapp/"
+      title: "Fantasy Football Draft App",
+      value: "https://www.instagram.com/fantasyfootballdraftapp/",
       link: "https://www.instagram.com/fantasyfootballdraftapp/"
     }
   ];
