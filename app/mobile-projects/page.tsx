@@ -74,14 +74,17 @@ export default function MobileProjectsPage() {
               ))}
             </div>
 
-            {project.link && (
-  <a
-    href={project.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mx-auto mt-6 block rounded-xl bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-400"  >
-     App Store
-  </a>
+{project.link && (
+  <div className="mt-6 flex justify-center">
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-xl bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-400"
+    >
+      View on App Store
+    </a>
+  </div>
 )}
 
 
