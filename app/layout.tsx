@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
-
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Melih Siskular | Software Developer & Sports Analytics",
@@ -32,14 +32,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className="bg-[#07111b]">
       <body className="min-h-screen bg-[#07111b] text-white">
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );

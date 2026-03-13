@@ -79,8 +79,7 @@ export default function MobileProjectsPage() {
     href={project.link}
     target="_blank"
     rel="noopener noreferrer"
-    className="mt-6 inline-block rounded-xl bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-400"
-  >
+    className="mx-auto mt-6 block rounded-xl bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-400"  >
      App Store
   </a>
 )}
