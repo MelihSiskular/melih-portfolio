@@ -82,7 +82,7 @@ export default function MobileProjectsPage() {
       rel="noopener noreferrer"
       className="rounded-xl bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-400"
     >
-      View on App Store
+       App Store
     </a>
   </div>
 )}
